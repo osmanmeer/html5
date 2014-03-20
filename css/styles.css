@@ -7,10 +7,14 @@ h1, h2, h3, h4 {
 }
 
 a {
-    font-size: medium;
+    font-size: larger;
     color: white;
     background-color: gray;
     text-decoration: none;
     display: block;
     padding: 20px;
+}
+
+p {
+    font-size: large;
 }
