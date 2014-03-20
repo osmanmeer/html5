@@ -1,0 +1,16 @@
+* {
+    font-family: Arial;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+a {
+    font-size: medium;
+    color: white;
+    background-color: gray;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
