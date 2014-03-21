@@ -1,0 +1,37 @@
+<html>
+<body>
+    <p>
+        Below are the relationships between Prophet Muhammed PBUH and Ashra Mubashara.
+    </p>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="../scripts/springy.js"></script>
+    <script src="../scripts/springyui.js"></script>
+    <script>
+        var graph = new Springy.Graph();
+
+        var muhammed = graph.newNode({
+            label: 'Prophet Muhammed',
+            ondoubleclick: function () { console.log("Hello!"); }
+        });
+        var abuBakr = graph.newNode({ label: 'AbuBakr' });
+        var umar = graph.newNode({ label: 'Umar' });
+        var uthman = graph.newNode({ label: 'Uthman' });
+        var ali = graph.newNode({ label: 'Ali' });
+
+        graph.newEdge(muhammed, abuBakr, { color: '#00A0B0', label: 'Son-in-law of' });
+        graph.newEdge(muhammed, umar, { color: '#6A4A3C', label: 'Son-in-law of' });
+        graph.newEdge(muhammed, uthman, { color: '#CC333F', label: 'Father-in-law of' });
+        graph.newEdge(muhammed, ali, { color: '#EB6841', label: 'Father-in-law of' });
+
+        jQuery(function () {
+            var springy = window.springy = jQuery('#springydemo').springy({
+                graph: graph,
+                nodeSelected: function (node) {
+                    console.log('Node selected: ' + JSON.stringify(node.data));
+                }
+            });
+        });
+    </script>
+    <canvas id="springydemo" width="640" height="480" /> 
+</body>
+</html>
