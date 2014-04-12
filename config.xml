@@ -7,15 +7,14 @@
 
     <!-- versionCode is optional and Android only -->
 
-	<icon src="icon.png" width="192" height="192"/>
     <name>Sahaba</name>
-
     <description>
         The purpose of this app is to kindle interest about the lives of Sahaba RAA (the companions of the Prophet PBUH).
     </description>
-
     <author href="http://perusalsoftware.com" email="perusalsoftware@gmail.com">
         Perusal Software
     </author>
+	<icon src="icon_1024x1024.png"/>
+    <preference name="permissions" value="none"/>
 
 </widget>
