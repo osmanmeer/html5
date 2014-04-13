@@ -14,7 +14,7 @@
     <author href="http://perusalsoftware.com" email="perusalsoftware@gmail.com">
         Perusal Software
     </author>
-	<icon src="icon.png"/>
+	<icon src="icon_512x512.png"/>
     <preference name="permissions" value="none"/>
 
 
